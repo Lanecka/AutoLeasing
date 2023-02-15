@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 aximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>Главная</title></head>
+<body>
+  <div class="wrapper">
+    <h1>Рассчитайте стоимость автомобиля в лизинг</h1>
+    <div class="slider">
+  
+      <div class="item item--one"><!--item1-->
+        <div class="item__header">Стоимость автомобиля</div>
+        <div class="item__range">
+          <div class="item__meaning">
+            <span id="rangePrice">0</span>
+            <span>₽</span>
+          </div>
+          <input 
+            type="range" 
+            id="price" 
+            class="item__input" 
+            value="0" 
+            min="0" 
+            max="5000000" 
+            step="1000"
+          >
+        </div>
+      </div><!--item1 end-->
+  
+      <div class="item item--two"><!--item2-->
+        <div class="item__header">Первоначальный взнос</div>
+        <div class="item__range">
+          <div class="item__meaning item__meaning--per">
+            <span id="rangePayment">0</span>
+            <span id="perPayment" class="item__per">0%</span>
+          </div>
+          <input type="range" id="payment" class="item__input" value="0" min="0" max="5000000" step="1000">
+        </div>
+      </div> <!--item2 end-->
+  
+      <div class="item item--three"><!--item3-->
+        <div class="item__header">Срок лизинга</div>
+        <div class="item__range">
+          <div class="item__meaning">
+            <span id="rangeTerm">0</span>
+            <span>мес.</span>
+          </div>
+          <input type="range" id="term" class="item__input" value="0" min="0" max="72" step="1">
+        </div>
+      </div><!--item3 end-->
+  
+        <div class="item item--four">
+          <div class="item__header">
+            Сумма договора лизинга
+          </div>
+          <div class="item__result" id="suma">4 467 313 ₽</div>
+        </div><!--item4 end-->
+  
+        <div class="item item--five">
+          <div class="item__header">
+            Ежемесячный платеж от
+          </div>
+          <div class="item__result" id="monthly">114 455</div>
+        </div><!--item5 end-->
+  
+      <div class="item item--six">
+        <button class="item__btn">Оставить заявку</button>
+      </div>
+  
+    </div><!--slider end-->
+  
+  </div>
+  
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
