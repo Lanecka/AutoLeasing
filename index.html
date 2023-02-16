@@ -15,18 +15,10 @@
         <div class="item__header">Стоимость автомобиля</div>
         <div class="item__range">
           <div class="item__meaning">
-            <span class="item__price" id="rangePrice">1500000</span>
+            <input class="item__field" type="number" id="rangePrice" value="1500000">
             <span>₽</span>
           </div>
-          <input 
-            type="range" 
-            id="price" 
-            class="item__input" 
-            value="1500000" 
-            min="1500000" 
-            max="10000000" 
-            step="1000"
-          >
+          <input type="range" id="price" class="item__input" value="1500000" min="1500000" max="10000000" step="1000">
         </div>
       </div><!--item1 end-->
   
@@ -34,8 +26,8 @@
         <div class="item__header">Первоначальный взнос</div>
         <div class="item__range">
           <div class="item__meaning item__meaning--per">
-            <span id="rangePayment">100000</span>
-            <span id="perPayment" class="item__per">10%</span>
+            <input type="number" id="rangePayment" class="item__field" value="100000">
+            <span id="perPayment" class="item__per">7 %</span>
           </div>
           <input type="range" id="payment" class="item__input" value="0" min="100000" max="10000000" step="1000">
         </div>
@@ -45,26 +37,26 @@
         <div class="item__header">Срок лизинга</div>
         <div class="item__range">
           <div class="item__meaning">
-            <span id="rangeTerm">6</span>
+            <input type="number" class="item__field" id="rangeTerm" value="6">
             <span>мес.</span>
           </div>
           <input type="range" id="term" class="item__input" value="6" min="6" max="120" step="1">
         </div>
       </div><!--item3 end-->
   
-        <div class="item item--four">
-          <div class="item__header">
-            Сумма договора лизинга
-          </div>
-          <div class="item__result" id="suma">4 467 313 ₽</div>
-        </div><!--item4 end-->
+      <div class="item item--four">
+        <div class="item__header">
+          Сумма договора лизинга
+        </div>
+        <div class="item__result" id="suma">1 754 950 ₽</div>
+      </div><!--item4 end-->
   
-        <div class="item item--five">
-          <div class="item__header">
-            Ежемесячный платеж от
-          </div>
-          <div class="item__result" id="monthly">114 455</div>
-        </div><!--item5 end-->
+      <div class="item item--five">
+        <div class="item__header">
+          Ежемесячный платеж от
+        </div>
+        <div class="item__result" id="monthly">275 825 ₽</div>
+      </div><!--item5 end-->
   
       <div class="item item--six">
         <button class="item__btn">Оставить заявку</button>

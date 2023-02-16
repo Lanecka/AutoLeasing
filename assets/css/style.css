@@ -90,6 +90,23 @@ body {
     padding: 7px 7px 7px 24px;
 }
 
+.wrapper .slider .item__field {
+    width: 60%;
+    font-family: "Nekst";
+    font-size: 30px;
+    line-height: 36px;
+    color: var(--gray);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -moz-appearance: textfield;
+}
+
+.wrapper .slider .item input[type=number]::-webkit-outer-spin-button,
+.wrapper .slider .item input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .wrapper .slider .item__input {
     position: absolute;
     bottom: -4px;
