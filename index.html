@@ -5,44 +5,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 aximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/nouislider.min.css">
   <title>Главная</title></head>
 <body>
   <div class="wrapper">
     <h1>Рассчитайте стоимость автомобиля в лизинг</h1>
-    <div class="slider">
+    <form class="form" id="form">
   
-      <div class="item item--one"><!--item1-->
+      <label class="item item--one"><!--item1-->
         <div class="item__header">Стоимость автомобиля</div>
         <div class="item__range">
           <div class="item__meaning">
-            <input class="item__field" type="number" id="rangePrice" value="1500000">
+            <input class="item__field" type="text" id="rangePrice" value="1500000">
             <span>₽</span>
           </div>
-          <input type="range" id="price" class="item__input" value="1500000" min="1500000" max="10000000" step="1000">
+          <div class="slider" id="sliderPrice">
+            <div class="progress"></div>
+          </div>
         </div>
-      </div><!--item1 end-->
+      </label><!--item1 end-->
   
-      <div class="item item--two"><!--item2-->
+      <label class="item item--two"><!--item2-->
         <div class="item__header">Первоначальный взнос</div>
         <div class="item__range">
           <div class="item__meaning item__meaning--per">
-            <input type="number" id="rangePayment" class="item__field" value="100000">
+            <input type="text" id="rangePayment" class="item__field" value="100000">
             <span id="perPayment" class="item__per">7 %</span>
           </div>
-          <input type="range" id="payment" class="item__input" value="0" min="100000" max="10000000" step="1000">
+          <div class="slider" id="sliderPay">
+            <div class="progress"></div>
+          </div>
         </div>
-      </div> <!--item2 end-->
+      </label> <!--item2 end-->
   
-      <div class="item item--three"><!--item3-->
+      <label class="item item--three"><!--item3-->
         <div class="item__header">Срок лизинга</div>
         <div class="item__range">
           <div class="item__meaning">
-            <input type="number" class="item__field" id="rangeTerm" value="6">
+            <input type="text" class="item__field" id="rangeTerm" value="6">
             <span>мес.</span>
           </div>
-          <input type="range" id="term" class="item__input" value="6" min="6" max="120" step="1">
+          <div class="slider" id="sliderTerm">
+            <div class="progress"></div>
+          </div>
         </div>
-      </div><!--item3 end-->
+      </label><!--item3 end-->
   
       <div class="item item--four">
         <div class="item__header">
@@ -62,10 +69,16 @@
         <button class="item__btn">Оставить заявку</button>
       </div>
   
-    </div><!--slider end-->
+    </form><!--slider end-->
   
   </div>
   
+  <script src="assets/js/wNumb.min.js"></script>
+  <script src="assets/js/nouislider.min.js"></script>
+  
+  
+  <script src="assets/js/cleave.min.js"></script>
   <script src="assets/js/main.js"></script>
+  
 </body>
 </html>
